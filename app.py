@@ -144,7 +144,7 @@ def manage_app(app_name, action):
             "close": "msedge.exe"
         },
         "chrome browser": {
-            "open": "C:\Program Files\Google\Chrome\Application\chrome.exe",
+            "open": r"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
             "close": "chrome.exe"
         },
         "firefox browser": {
