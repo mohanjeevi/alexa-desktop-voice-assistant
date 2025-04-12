@@ -56,14 +56,13 @@ This Python-based desktop assistant allows you to control your system using voic
 The assistant supports opening:
 - Word, Excel, PowerPoint, Notepad, Paint, Calculator, Chrome, Firefox, Edge, VS Code, etc.
 
-You can customize application paths in the `app.py` under the `app_paths` dictionary.
-
 ---
 
 ## 🖥️ Platform Support
 
-- ✅ Windows (fully supported)
-- ⚠️ macOS/Linux (partial support, some platform-specific features may need adjustment)
+- ✅ Windows
+- ✅ macOS
+- ✅ Linux
 
 ---
 
@@ -85,11 +84,5 @@ Captured screenshots will be saved to your **Pictures** folder as:
 ```
 screenshot1.png, screenshot2.png, ...
 ```
-
----
-
-## 🛡️ Disclaimer
-
-This project is for educational/demo purposes. Use with caution when enabling system-level commands like shutdown or restart.
 
 ---
