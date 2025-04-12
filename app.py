@@ -139,20 +139,20 @@ def manage_app(app_name, action):
             "open": "mspaint.exe",
             "close": "mspaint.exe"
         },
-        "edge": {
+        "edge browser": {
             "open": r"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
             "close": "msedge.exe"
         },
-        "chrome": {
-            "open": "chrome.exe",
+        "chrome browser": {
+            "open": "C:\Program Files\Google\Chrome\Application\chrome.exe",
             "close": "chrome.exe"
         },
-        "firefox": {
+        "firefox browser": {
             "open": "firefox.exe",
             "close": "firefox.exe"
         },
         "vlc": {
-            "open": "vlc.exe",
+            "open": r"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\vlc.exe",
             "close": "vlc.exe"
         },
         "spotify": {
@@ -402,8 +402,8 @@ def handle_command(command):
     
     if match_open:
         app_or_folder = match_open.group(1)
-        recognized_apps = ["word", "excel", "powerpoint", "notepad", "calculator", "paint", "edge", 
-                          "chrome", "firefox", "vlc", "spotify", "adobe reader", "command prompt", 
+        recognized_apps = ["word", "excel", "powerpoint", "notepad", "calculator", "paint", "edge browser", 
+                          "chrome browser", "firefox browser", "vlc", "spotify", "adobe reader", "command prompt", 
                           "task manager", "windows media player", "photos", "vs code", "visual studio code", "code"]
         if app_or_folder in recognized_apps:
             result = manage_app(app_or_folder, "open")
@@ -435,8 +435,8 @@ def handle_command(command):
     
     if match_close:
         app_or_folder = match_close.group(1)
-        recognized_apps = ["word", "excel", "powerpoint", "notepad", "calculator", "paint", "edge", 
-                           "chrome", "firefox", "vlc", "spotify", "adobe reader", "command prompt", 
+        recognized_apps = ["word", "excel", "powerpoint", "notepad", "calculator", "paint", "edge browser", 
+                           "chrome browser", "firefox browser", "vlc", "spotify", "adobe reader", "command prompt", 
                            "task manager", "windows media player", "photos", "vs code", "visual studio code", "code"]
         if app_or_folder in recognized_apps:
             result = manage_app(app_or_folder, "close")
