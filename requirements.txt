@@ -1,0 +1,9 @@
+speechrecognition
+pyttsx3
+pyaudio
+psutil
+screen-brightness-control
+pycaw
+pygetwindow
+mss
+comtypes
